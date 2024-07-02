@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+
+# Other
+.DS_Store
+.env
