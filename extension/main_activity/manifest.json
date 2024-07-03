@@ -5,7 +5,9 @@
   "description": "Automatically fill out job applications and generate resumes and cover letters.",
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs",
+    "windows"
   ],
   "background": {
     "service_worker": "background.js"
@@ -17,7 +19,7 @@
     }
   ],
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "persistent_popup.html",
     "default_icon": {
       "16": "icons/icon16.svg",
       "48": "icons/icon48.svg",

@@ -1,8 +1,8 @@
-chrome.runtime.onInstalled.addListener(() => {
-    console.log('Extension installed');
+chrome.action.onClicked.addListener(() => {
+  chrome.windows.create({
+      url: chrome.runtime.getURL("persistent_popup.html"),
+      type: "popup",
+      width: 400,
+      height: 600
   });
-  
-  chrome.action.onClicked.addListener((tab) => {
-    chrome.tabs.sendMessage(tab.id, { message: 'extensionIconClicked' });
-  });
-  
+});

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Autofill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #0070ba;
+        }
+        button {
+            background-color: #0070ba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        #result {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        #drag-handle {
+            width: 100%;
+            cursor: move;
+            padding: 10px;
+            background-color: #0070ba;
+            color: white;
+            text-align: right;
+        }
+        #full-screen-btn {
+            background-color: white;
+            color: #0070ba;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="drag-handle">
+        <button id="full-screen-btn">🔳</button>
+    </div>
+    <h1>Job Application Autofill</h1>
+    <button id="autofill">Generate Resume & Cover Letter</button>
+    <button id="highlight">Highlight Keywords</button>
+    <div id="result"></div>
+    <script src="persistent_popup.js"></script>
+</body>
+</html>

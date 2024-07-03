@@ -18,17 +18,23 @@
       padding: 10px 20px;
       cursor: pointer;
       border-radius: 5px;
+      margin: 5px;
     }
-    .icon {
-      width: 48px;
-      height: 48px;
+    #result {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
-  <h1>Autofill Job Application</h1>
-  <img src="icons/icon48.svg" alt="icon" class="icon" />
-  <button id="autofill">Autofill Form</button>
+  <h1>Job Application Autofill</h1>
+  <button id="autofill">Generate Resume & Cover Letter</button>
+  <button id="highlight">Highlight Keywords</button>
+  <div id="result"></div>
   <script src="popup.js"></script>
 </body>
 </html>
